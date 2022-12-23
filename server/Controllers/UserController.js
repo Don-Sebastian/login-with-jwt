@@ -4,16 +4,7 @@ const UserModel = require('../Models/UserModel')
 
 
 exports.updateProfileImage = async (verify, req, res, next) => {
-  //   const file = files.map((file) => file);
-  // const fileName = file.map((file) => file.filename);
-  // const image = req.body;
-  // product.Image = fileName;
-  // product.Date = new Date();
-  // if (!req.files) {
-  //   const error = new Error('Please choose files');
-  //   error.httpStatusCode = 400;
-  //   return next(error);
-  // }
+  
   if (verify.status) {
     try {
       const obj = {
