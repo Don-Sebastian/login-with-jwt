@@ -1,6 +1,8 @@
 const AdminModel = require("../Models/AdminModel");
 const jwtAdmin = require("jsonwebtoken");
 
+// Admin Authentication
+
 const isAuthenticatedAdmin = async (req, res, next) => {
     try {
         const token = req.cookies.jwtAdmin;
